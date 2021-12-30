@@ -7,9 +7,25 @@
         <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1>How are we today?</h1> <!-- main heading -->
-        <form>
-            
-        </form>
+        <fieldset>
+            <legend>How are we today?</legend>
+
+            <label for="name">Name:</label> <!-- user enters name -->
+            <input type="text" id="name">
+            <br>
+            <label for="mood">Today's Mood:</label> <!-- dropdown list of moods -->
+            <input list="moods" id="mood">
+            <datalist id="moods">
+                <option value="Happy">
+                <option value="Mad">
+                <option value="Sad">
+                <option value="Anxious">
+                <option value="Worried">
+            </datalist>
+            <br>
+            <label for="entry">Anything you want to add?</label> <!-- user can text freely -->
+            <textarea id="entry" placeholder="Today was a ____ day because...."></textarea>
+
+        </fieldset>
     </body>
 </html>
